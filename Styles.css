@@ -1,0 +1,258 @@
+/* Estilos básicos para toda la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para los títulos */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* Estilos para los párrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Estilos para las secciones de proyectos */
+.proyecto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* IMÁGENES MÁS PEQUEÑAS */
+.proyecto img {
+    width: 300px;           /* Ancho fijo más pequeño */
+    height: 200px;          /* Alto fijo */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+    object-fit: cover;      /* Ajusta la imagen sin distorsionar */
+    margin-left: auto;
+    margin-right: auto;     /* Centra la imagen */
+}
+
+.proyecto p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para las redes sociales */
+.redes {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+}
+
+.redes a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.redes a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+p:last-of-type {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* ============================================ */
+/* DISEÑO PARA CELULARES (menos de 768px) */
+/* ============================================ */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        padding-left: 10px;
+        border-left-width: 4px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .proyecto {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Imágenes más pequeñas en celular */
+    .proyecto img {
+        width: 100%;        /* Ocupa todo el ancho en móvil */
+        max-width: 300px;   /* Pero no más de 300px */
+        height: 180px;      /* Un poco más baja en móvil */
+        margin: 0 auto 15px auto; /* Centrada */
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .redes {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .redes a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+/* ============================================ */
+/* DISEÑO PARA COMPUTADORAS (más de 768px) */
+/* ============================================ */
+@media (min-width: 769px) {
+    #proyectos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .proyecto {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra contenido */
+        text-align: center;  /* Texto centrado */
+    }
+
+    /* Imágenes más pequeñas en computadora también */
+    .proyecto img {
+        width: 250px;       /* Más pequeña en computadora */
+        height: 180px;      /* Más compacta */
+        object-fit: cover;
+    }
+
+    .redes a {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    button {
+        width: auto;
+        min-width: 200px;
+    }
+}
