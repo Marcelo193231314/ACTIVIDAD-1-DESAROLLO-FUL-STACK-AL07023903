@@ -1,4 +1,3 @@
-/* Estilos básicos para toda la página */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -9,7 +8,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Estilos para los títulos */
 h1 {
     color: #2c3e50;
     margin-bottom: 10px;
@@ -34,13 +32,11 @@ h3 {
     font-size: 1.3em;
 }
 
-/* Estilos para los párrafos */
 p {
     margin-bottom: 15px;
     text-align: justify;
 }
 
-/* Estilos para las secciones de proyectos */
 .proyecto {
     background-color: white;
     border: 1px solid #ddd;
@@ -50,16 +46,15 @@ p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* IMÁGENES MÁS PEQUEÑAS */
 .proyecto img {
-    width: 300px;           /* Ancho fijo más pequeño */
-    height: 200px;          /* Alto fijo */
+    width: 300px;           
+    height: 200px;          
     border-radius: 5px;
     margin-bottom: 15px;
     display: block;
-    object-fit: cover;      /* Ajusta la imagen sin distorsionar */
+    object-fit: cover;      
     margin-left: auto;
-    margin-right: auto;     /* Centra la imagen */
+    margin-right: auto;     
 }
 
 .proyecto p {
@@ -67,7 +62,6 @@ p {
     color: #555;
 }
 
-/* Estilos para el formulario de contacto */
 form {
     background-color: white;
     padding: 25px;
@@ -117,7 +111,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Estilos para las redes sociales */
 .redes {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -149,9 +142,7 @@ p:last-of-type {
     border-top: 1px solid #ddd;
 }
 
-/* ============================================ */
-/* DISEÑO PARA CELULARES (menos de 768px) */
-/* ============================================ */
+
 @media (max-width: 768px) {
     body {
         padding: 15px;
@@ -178,12 +169,11 @@ p:last-of-type {
         margin-bottom: 15px;
     }
 
-    /* Imágenes más pequeñas en celular */
     .proyecto img {
-        width: 100%;        /* Ocupa todo el ancho en móvil */
-        max-width: 300px;   /* Pero no más de 300px */
-        height: 180px;      /* Un poco más baja en móvil */
-        margin: 0 auto 15px auto; /* Centrada */
+        width: 100%;        
+        max-width: 300px;   
+        height: 180px;     
+        margin: 0 auto 15px auto; 
     }
 
     form {
@@ -216,9 +206,7 @@ p:last-of-type {
     }
 }
 
-/* ============================================ */
-/* DISEÑO PARA COMPUTADORAS (más de 768px) */
-/* ============================================ */
+
 @media (min-width: 769px) {
     #proyectos {
         display: grid;
@@ -230,14 +218,13 @@ p:last-of-type {
         margin-bottom: 0;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra contenido */
-        text-align: center;  /* Texto centrado */
+        align-items: center; 
+        text-align: center;  
     }
 
-    /* Imágenes más pequeñas en computadora también */
     .proyecto img {
-        width: 250px;       /* Más pequeña en computadora */
-        height: 180px;      /* Más compacta */
+        width: 250px;      
+        height: 180px;      
         object-fit: cover;
     }
 
